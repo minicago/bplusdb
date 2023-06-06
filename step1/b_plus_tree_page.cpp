@@ -10,7 +10,7 @@ namespace bustub {
  *  （定义于b_plus_tree_page.h头文件中）
  */
 bool BPlusTreePage::IsLeafPage() const {
-  return page_type_ == LEAF_PAGE;
+  return page_type_ == IndexPageType::LEAF_PAGE;
 }
 /*
  * 函数功能：
@@ -88,7 +88,7 @@ void BPlusTreePage::SetParentPageId(page_id_t parent_page_id) { parent_page_id_ 
  *  get/set self page id
  */
 page_id_t BPlusTreePage::GetPageId() const { return page_id_; }
-void BPlusTreePage::SetPageId(page_id_t page_id) { page_id_=page_id_t; }
+void BPlusTreePage::SetPageId(page_id_t page_id) { page_id_=page_id; }
 
 /*
  *函数功能：
